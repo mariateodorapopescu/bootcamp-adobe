@@ -1,12 +1,1 @@
-# bootcap-adobe
-# bootcap-adobe
-# bootcap-adobe
-# bootcap-adobe
-# bootcap-adobe
-# bootcap-adobe
-# bootcap-adobe
-# bootcap-adobe
-# bootcap-adobe
-# bootcap-adobe
-# bootcap-adobe
-# bootcap-adobe
+# bootcamp-adobe
