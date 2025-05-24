@@ -9,94 +9,66 @@
 
 </head>
 <body>
-    <div class="sticky-container">
-        <div class="my-sticky">
-            <b>Top 7 IMDB Christmas Movies</b>
+    <header class="header-container">
+        <div class="header-content">
+            <h1 class="site-title">🎬 Top Christmas Movies</h1>
+            <nav class="navigation">
+                <button class="menu-button" id="menuButton">
+                    Menu ▼
+                </button>
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <a href="#" class="dropdown-item">🏠 Home</a>
+                    <a href="#" class="dropdown-item">ℹ️ About</a>
+                    <a href="#" class="dropdown-item">📝 Feedback</a>
+                    <a href="#" class="dropdown-item">⭐ Rate Movies</a>
+                </div>
+            </nav>
         </div>
-    </div>
-    <div class="menu">
-        <input type="button" class="ceva" value="Menu"/>
-        <div class="dropdown">
-            <div class="item"><a href="#">Home</a></div>
-            <div class="item"><a href="#">About</a></div>
-            <div class="item"><a href="#">Feedback</a></div>
-        </div>
-    </div>
-    <div class="my-container">
-        <div class="sila">
-            <div class="my-item">
-            <h1><i>Title:</i> Home Alone</h1>
-            <p class = "year"><b>Year:</b> 1990
-            </p>
-            <p><b>Director:</b> Chris Columbus</p>
-            <p>
-                <b>IMDB Score:</b> 7.6
-            </p>
-            <img class="my-img" src="https://lumiere-a.akamaihd.net/v1/images/image_ed8d7a4e.jpeg?region=0%2C0%2C800%2C1200" style="width: 15rem; height: 21rem" alt="poster"></img>
-        </div>
-        <div class="my-item">
-            <h1><i>Title:</i> Love Actually</h1>
-            <p class = "year"><b>Year:</b> 2003
-            </p>
-            <p><b>Director:</b> Richard Curtis</p>
-            <p>
-                <b>IMDB Score:</b> 7.6
-            </p>
-            <img class="my-img" src="https://static.cinemagia.ro/img/resize/db/movie/00/48/79/love-actually-252657l-600x0-w-de7ee682.jpg" style="width: 15rem; height: 21rem" alt="poster"></img>
-        </div>
-        <div class="my-item">
-            <h1><i>Title:</i> Elf</h1>
-            <p class = "year"><b>Year:</b> 2003
-            </p>
-            <p><b>Director:</b> Jon Favreau</p>
-            <p>
-                <b>IMDB Score:</b> 6.9
-            </p>
-            <img class="my-img" src="https://thewildgameevergreen.com/wp-content/uploads/2020/11/elf-movie-poster.jpg" style="width: 15rem; height: 21rem" alt="poster"></img>
-        </div>
-    </div>
-    <div class="sila">
-        <div class="my-item">
-            <h1><i>Title:</i> It's a Wonderful Life</h1>
-            <p class = "year"><b>Year:</b> 1946
-            </p>
-            <p><b>Director:</b> Frank Capra</p>
-            <p>
-                <b>IMDB Score:</b> 8.6
-            </p>
-            <img class="my-img" src="https://www.themoviedb.org/t/p/w500/mV3VcmMJN6Zwahj42dy9WwPUyRI.jpg" style="width: 15rem; height: 21rem" alt="poster"></img>
-        </div>
-        <div class="my-item">
-            <h1><i>Title:</i> The Polar Express</h1>
-            <p class = "year"><b>Year:</b> 2004
-            </p>
-            <p><b>Director:</b> Robert Zemekins</p>
-            <p>
-                <b>IMDB Score:</b> 6.6
-            </p>
-            <img class="my-img" src="https://m.media-amazon.com/images/M/MV5BMTM1NTU0NTE4MV5BMl5BanBnXkFtZTcwMTQ0MjEzMw@@._V1_.jpg" style="width: 15rem; height: 21rem" alt="poster"></img>
-        </div>
-        <div class="my-item">
-            <h1><i>Title:</i> A Christmas Carol</h1>
-            <p class = "year"><b>Year:</b> 1984
-            </p>
-            <p><b>Director:</b> Clive Donner</p>
-            <p>
-                <b>IMDB Score:</b> 7.9
-            </p>
-            <img class="my-img" src="https://www.themoviedb.org/t/p/w500/kGmpIkjVRWHQ97AiEXC0pLt5VtY.jpg" style="width: 15rem; height: 21rem" alt="poster"></img>
-        </div>
-        <div class="my-item">
-            <h1><i>Title:</i> How the Grinch Stole the Christmas</h1>
-            <p class = "year"><b>Year:</b> 2000
-            </p>
-            <p><b>Director:</b> Ron Howard</p>
-            <p>
-                <b>IMDB Score:</b> 6.2
-            </p>
-            <img class="my-img" src="https://m.media-amazon.com/images/M/MV5BNWNiNTczNzEtMjQyZC00MjFmLTkzMDMtODk4ZGMyZmE0N2E4XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg" style="width: 15rem; height: 21rem" alt="poster"></img>
-        </div>
-    </div>
-</div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-container">
+        <!-- Section Introduction -->
+        <section class="section-intro">
+            <h2>Handpicked Holiday Classics</h2>
+            <p>Discover the most beloved Christmas movies of all time, carefully selected based on IMDB ratings and cultural impact. From heartwarming family tales to timeless classics.</p>
+        </section>
+
+        <!-- Filter and Sort Controls -->
+        <section class="controls-section">
+            <button class="control-button active" data-sort="default">Original Order</button>
+            <button class="control-button" data-sort="rating">Sort by Rating</button>
+            <button class="control-button" data-sort="year">Sort by Year</button>
+            <button class="control-button" data-sort="title">Sort by Title</button>
+        </section>
+
+        <!-- Movies Grid -->
+        <section class="movies-grid" id="moviesGrid">
+            <!-- Movies will be populated by JavaScript -->
+        </section>
+
+        <!-- Statistics Section -->
+        <section class="stats-section">
+            <h3 style="text-align: center; margin-bottom: 2rem; color: var(--primary-color);">Collection Statistics</h3>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" id="avgRating">7.3</div>
+                    <div class="stat-label">Average Rating</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="yearSpan">54</div>
+                    <div class="stat-label">Years Spanning</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="totalMovies">7</div>
+                    <div class="stat-label">Total Movies</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="topRated">8.6</div>
+                    <div class="stat-label">Highest Rated</div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
